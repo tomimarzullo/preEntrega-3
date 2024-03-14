@@ -1,0 +1,131 @@
+/*----------------------------------MAIN INICIO----------------------------------*/
+main {
+    width: 100%;
+    height: auto;
+    color: $color_fondo;
+    .logo {
+        width: 100%;
+        padding: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        img {
+            width: 150px;
+            border-radius: 10%;
+        }
+    }
+    .lafeliz{
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        p{
+            font-size: 18px;
+            color: black;
+            text-align: center;
+            span{
+                padding: 8px;
+            }
+            i{
+                color: black;
+                font-size: 20px;
+            }
+        }
+    }
+    .call {
+        width: 100%;
+        height: auto;
+        padding: 25px;
+        font-size: 18px;
+        background-color: black;
+        border-radius: 10px;
+        p{
+            color: white;
+            text-align: center;
+            font-style: italic;
+        }
+    }
+    .galeria {
+        width:100%;
+        height: auto;
+        padding: 20px;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat (6, 1fr);
+        grid-template-areas: 
+        "gal1"
+        "gal2"
+        "gal3"
+        "gal4"
+        "gal5"
+        "gal6";
+        grid-gap: 15px;
+        .item {
+            margin: 0 auto;
+            width: 80%;
+            height: 280px;
+            border: 5px solid black;
+            box-shadow: 8px 5px 12px rgb(0, 0, 0);
+            border-radius: 15px;
+            background-position: center;
+            background-size: cover;
+        }
+        .item1 {
+            grid-area: gal1;
+            background-image: url(../multimedia/photo1.jpg);
+            
+        }
+        .item2 {
+            grid-area: gal2;
+            background-image: url(../multimedia/photo2.jpg);   
+        }
+        .item3 {
+            grid-area: gal3;
+            background-image: url(../multimedia/fondocontacto.jpg);
+        }
+        .item4 {
+            grid-area: gal4;
+            background-image: url(../multimedia/photo4.jpg);
+        }
+        .item5 {
+            grid-area: gal5;
+            background-image: url(../multimedia/photo5.jpg);
+        }
+        .item6 {
+            grid-area: gal6;
+            background-image: url(../multimedia/photo6.jpg);
+        }
+    }
+    .ofertas {
+        width: 100%;
+        height: auto;
+        border: 5px solid black;
+        padding: 20px;
+        margin-bottom: 25px;
+        display: flex;
+        justify-content: space-between;
+        .mail {
+            p {
+                color: black;
+            }
+            .input-mail{
+                padding: 5px;
+                margin: 8px;
+            }
+            .submit {
+                padding: 5px 20px;
+                margin: 8px;
+                border: 1px solid black;
+            }
+        }
+        img {
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            width: 80px;
+            height: 60px;
+        }
+    }
+}
+
+
+

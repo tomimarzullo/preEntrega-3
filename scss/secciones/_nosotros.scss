@@ -1,0 +1,120 @@
+/*----------------------------------MAIN NOSOTROS----------------------------------*/
+main{
+    background-color: $color_fondo;
+    .equipo{
+        margin-bottom: 25px;
+        width: 100%;
+        height: 500px;
+        background-image: url(../../multimedia/equipo.jpg);
+        background-position: center;
+        background-size: cover;
+        background-color: rgb(47, 47, 47);
+    }
+    .nos{
+        width: 300px;
+        height: 300px;
+        margin: 30px auto;
+        padding: 30px;
+        background-color: $color_principal;
+        border-radius: 100%;
+        i{
+            margin-top: 20px;
+            margin-bottom: 20px;
+            display: flex;
+            justify-content: center;
+        }
+        p{
+            text-align: center;
+        }
+    }
+    .proposito{
+        font-size: 20px;
+        color: rgb(18, 174, 117);
+        text-align: center;
+    }
+    .p-nos{
+        margin: 0;
+        padding: 25px;
+        font-size: 18px;
+        text-align: center;
+        color: black;
+    }
+    .cards_nosotros{
+        padding: 20px;
+        margin: 0 auto;
+        width:100%;
+        height: auto;
+        margin-bottom: 25px;
+        background-color: $color_principal;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 40px;
+        .card_equipo1{
+            text-align: center;
+            margin: 0 auto;
+            padding: 15px;
+            .img_card1{
+                width: 30vh;
+                height: 30vh;
+                margin: 0 auto;
+                border-radius: 100%;
+                background-image: url(../../multimedia/Co-fundador1.jpg);
+                background-position: center;
+                background-size: cover;
+            }
+            h3{
+                padding: 15px;
+                font-weight: bold;
+            }
+            p{
+                font-weight: bold;
+                font-size: 16px;
+            }
+        }
+        .card_equipo2{
+            text-align: center;
+            margin: 0 auto;
+            padding: 10px;
+            .img_card2{
+                width: 30vh;
+                height: 30vh;
+                margin: 0 auto;
+                border-radius: 100%;
+                background-image: url(../../multimedia/co-fundador2.jpg);
+                background-position: center;
+                background-size: cover;
+            }
+            h3{
+                padding: 15px;
+                font-weight: bold;
+            }
+            p{
+                font-weight: bold;
+                font-size: 16px;
+            }
+        }
+        .card_equipo3{
+            text-align: center;
+            margin: 0 auto;
+            padding: 10px;
+            .img_card3{
+                width: 30vh;
+                height: 30vh;
+                border-radius: 100%;
+                background-image: url(../../multimedia/Diseñador.jpg);
+                background-position: center;
+                background-size: cover;
+            }
+            h3{
+                padding: 15px;
+                font-weight: bold;
+            }
+            p{
+                font-weight: bold;
+                font-size: 16px;
+            }
+        }
+    }
+}
+
+
