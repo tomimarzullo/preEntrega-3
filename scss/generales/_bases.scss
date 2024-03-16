@@ -6,12 +6,12 @@
 }
 
 body{
-    background-color: #ddd;
+    background-color: map-get($colores, color-fondo);
 }
 
 .huno {
     width: 250px;
-    background-color: black;
+    background-color: map-get($colores, color-secundario);
     display: block;
     margin: 30px auto;
     border-radius: 10px;
@@ -29,7 +29,7 @@ h2 {
     padding: 25px;
     font-weight: bold;
     text-align: center;
-    background-color: #ddd;
+    background-color: map-get($colores, color-fondo);
 }
 
 
@@ -41,7 +41,7 @@ header {
     height: auto;
     padding: 15px;
     .black {
-        background-color: black;
+        background-color: map-get($colores, color-secundario);
     }
     .white {
         color: #ddd;
@@ -54,16 +54,14 @@ header {
 footer {
     width: 100%;
     height: auto;
-    background-color: black;
+    background-color: map-get($colores, color-secundario);
     padding: 18px;
     .iconos{
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
         p{
-            color: #ddd;;
-            font-size: 16px;
-            text-align: center;
+            @include texto (#ddd, 16px, center, normal, none);
         }
         a{
             color: #ddd;

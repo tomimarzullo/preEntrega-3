@@ -142,7 +142,6 @@
     .main_contacto{
         .conteiner_contacto{
             display: flex;
-            flex-wrap: nowrap;
             justify-content: space-between;
             .formulario{
                 width: 100%;
@@ -215,13 +214,18 @@
             "gal1 gal2 gal3"
             "gal4 gal5 gal6";
             }
+        .ofertas{
+            width: 50%;
+        }
     }
 
 
 
     /*MAIN CONTACTO*/
-    .main_contacto{
+    main{
         .conteiner_contacto{
+            display: flex;
+            flex-wrap: nowrap;
             .formulario{
                 margin-left: -140px;
             }

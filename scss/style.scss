@@ -1,6 +1,9 @@
-@import 'generales/_bases.scss';
-
+@import 'utilities/_maps.scss';
 @import 'utilities/_variables.scss';
+@import 'utilities/_mixins.scss';
+
+
+@import 'generales/_bases.scss';
 
 @import 'secciones/_index.scss';
 

@@ -1,0 +1,28 @@
+@mixin flex ($display, $direccion, $justify, $align) {
+
+    display: $display;
+    flex-direction: $direccion;
+    justify-content: $justify;
+    align-items: $align;
+    
+}
+
+
+@mixin texto ($color, $tamanio, $centrado, $estilo, $font-weight) {
+
+    color: $color;
+    font-size: $tamanio;
+    text-align: $centrado;
+    font-style: $estilo;
+    font-weight:$font-weight;
+
+}
+
+
+@mixin imagen ($imagen, $size, $position) {
+
+    background-image: $imagen;
+    background-size: $size;
+    background-position: $position;
+
+}

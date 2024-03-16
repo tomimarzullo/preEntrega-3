@@ -2,26 +2,21 @@
 main {
     width: 100%;
     height: auto;
-    color: $color_fondo;
+    background-color: map-get($colores, color-fondo);
     .logo {
         width: 100%;
         padding: 40px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        @include flex (flex, row, center, center);
         img {
             width: 150px;
             border-radius: 10%;
         }
     }
     .lafeliz{
-        display: flex;
-        justify-content: center;
+        @include flex (flex, none, center, none);
         gap: 15px;
         p{
-            font-size: 18px;
-            color: black;
-            text-align: center;
+            @include texto (black, 16px, center, normal, none);
             span{
                 padding: 8px;
             }
@@ -36,12 +31,10 @@ main {
         height: auto;
         padding: 25px;
         font-size: 18px;
-        background-color: black;
+        background-color: map-get($colores, color-secundario);
         border-radius: 10px;
         p{
-            color: white;
-            text-align: center;
-            font-style: italic;
+            @include texto (#ddd, 18px, center, italic, none);
         }
     }
     .galeria {
@@ -72,7 +65,6 @@ main {
         .item1 {
             grid-area: gal1;
             background-image: url(../multimedia/photo1.jpg);
-            
         }
         .item2 {
             grid-area: gal2;
@@ -96,33 +88,30 @@ main {
         }
     }
     .ofertas {
-        width: 100%;
+        width: 80%;
         height: auto;
-        border: 5px solid black;
         padding: 20px;
-        margin-bottom: 25px;
-        display: flex;
-        justify-content: space-between;
+        margin: 25px auto;
+        border: 5px solid black;
         .mail {
+            @include flex (flex, column, center, none);
             p {
-                color: black;
+                @include texto (black, 18px, center, normal, none);
             }
             .input-mail{
+                width: 200px;
                 padding: 5px;
-                margin: 8px;
+                margin: 8px auto;
             }
             .submit {
                 padding: 5px 20px;
-                margin: 8px;
+                margin: 8px auto;
                 border: 1px solid black;
+                &:hover {
+                    background-color: rgba(54, 129, 228, 0.822);
+                    transform: scale(1.1);
+                }
             }
-        }
-        img {
-            display: flex;
-            justify-content: center;
-            align-items: flex-end;
-            width: 80px;
-            height: 60px;
         }
     }
 }
