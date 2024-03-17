@@ -274,7 +274,7 @@ main .cards_nosotros .card_equipo1 .img_card1 {
   height: 30vh;
   margin: 0 auto;
   border-radius: 100%;
-  background-image: url(../multimedia/Co-fundador1.jpg);
+  background-image: url(../../multimedia/Co-fundador1.jpg);
   background-position: center;
   background-size: cover;
 }
@@ -300,7 +300,7 @@ main .cards_nosotros .card_equipo2 .img_card2 {
   height: 30vh;
   margin: 0 auto;
   border-radius: 100%;
-  background-image: url(../multimedia/co-fundador2.jpg);
+  background-image: url(../../multimedia/co-fundador2.jpg);
   background-position: center;
   background-size: cover;
 }
@@ -325,7 +325,7 @@ main .cards_nosotros .card_equipo3 .img_card3 {
   width: 30vh;
   height: 30vh;
   border-radius: 100%;
-  background-image: url(../multimedia/Diseñador.jpg);
+  background-image: url(../../multimedia/Diseñador.jpg);
   background-position: center;
   background-size: cover;
 }

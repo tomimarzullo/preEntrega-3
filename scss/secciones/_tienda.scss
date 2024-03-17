@@ -15,8 +15,9 @@
 //     }
 // }
 
-main{
+main {
     background-color: map-get($colores, color-fondo);
+
     .tabla-medidas {
         padding: 25px;
         margin-top: 30px;
@@ -26,16 +27,19 @@ main{
         flex-wrap: wrap;
         justify-content: space-evenly;
         gap: 20px;
+
         .medidas {
             width: 200px;
         }
     }
-    .cards-ropa{
+
+    .cards-ropa {
         width: 100%;
         height: auto;
         display: flex;
         flex-wrap: wrap;
         gap: 10px;
+
         .ropa-venta {
             padding: 10px;
             margin: 20px auto;
@@ -43,33 +47,39 @@ main{
             height: auto;
             background-color: map-get($colores, color-secundario);
             border-radius: 10px;
+
             .producto {
                 width: 180px;
                 height: 200px;
                 transition-duration: 2s;
-                &:hover{
+
+                &:hover {
                     scale: (1.4);
                 }
             }
+
             p {
                 padding: 10px;
                 margin: 5px;
                 @include texto (#ddd, 16px, center, normal, none);
             }
-            .tamaño{
+
+            .tamaño {
                 margin: 12px auto;
                 display: flex;
                 justify-content: center;
-                ul{
-                    li{
-                        .talle{
-                            &:hover{
+
+                ul {
+                    li {
+                        .talle {
+                            &:hover {
                                 background-color: rgb(71, 142, 235);
                             }
                         }
                     }
                 }
             }
+
             .carrito {
                 padding: 8px;
                 display: flex;
@@ -79,14 +89,16 @@ main{
                 text-decoration: none;
                 background-color: map-get($colores, color-fondo);
                 transform: scale (2);
+
                 &:hover {
-                    background-image: linear-gradient(to right , rgb(56, 56, 56), gray);
+                    background-image: linear-gradient(to right, rgb(56, 56, 56), gray);
                     color: #ddd;
                 }
             }
         }
     }
 }
+
 
 
 
