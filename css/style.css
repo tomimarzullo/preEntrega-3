@@ -212,6 +212,31 @@ main .ofertas .mail .submit:hover {
   transform: scale(1.1);
 }
 
+.wpp {
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  background-color: green;
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+  display: flex;
+  flex-direction: none;
+  justify-content: center;
+  align-items: center;
+  transition-duration: 1.2s;
+}
+.wpp:hover {
+  transform: scale(1.5);
+}
+.wpp a {
+  text-decoration: none;
+}
+.wpp a i {
+  color: #ddd;
+  font-size: 25px;
+}
+
 /*----------------------------------MAIN NOSOTROS----------------------------------*/
 main {
   background-color: #ddd;
