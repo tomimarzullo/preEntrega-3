@@ -22,6 +22,7 @@ main{
         background-color: rgb(36, 36, 36);
         display: flex;
         flex-wrap: wrap;
+        gap: 80px;
         .formulario{
             width: 100%;
             text-align: center;
@@ -44,14 +45,46 @@ main{
             }
         }
         .mapa{
+            margin: 0 auto;
+            .mapa-mardel{
             overflow: hidden;
             width: 100%;
             height: 30vh;
             margin-top: 20px;
             @include flex (flex, none, center, none);
+            }
+            .info{
+                .ubi{
+                    margin-top: 20px;
+                    display: flex;
+                    justify-content: center;
+                    gap: 10px;
+                    i{
+                        color: #ddd;
+                        font-size: 20px;
+                    }
+                    p{
+                        color: #ddd;
+                        font-size: 18px;
+                    }
+                }
+                .mail-bkn{
+                    @extend .ubi;
+                    i{
+                        color: #ddd;
+                        font-size: 20px;
+                    }
+                    p{
+                        color: #ddd;
+                        font-size: 18px;
+                    }
+                }
+                
+            }
         }
     }
 }
+
 
 
 

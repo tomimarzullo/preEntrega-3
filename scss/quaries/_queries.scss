@@ -225,9 +225,10 @@
     main{
         .conteiner_contacto{
             display: flex;
+            @include flex (flex, none, space-evenly, none);
             flex-wrap: nowrap;
-            .formulario{
-                margin-left: -140px;
+            .formulario {
+                width: 50%;
             }
         }
     }

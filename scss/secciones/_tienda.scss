@@ -1,4 +1,20 @@
 /*----------------------------------MAIN TIENDA----------------------------------*/
+// .cart-shoping{
+//     width: 40px;
+//     height: 40px;
+//     border-radius: 100%;
+//     background-color: rgba(0, 0, 0, 0.993);
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     position: fixed;
+//     left: 174vh;
+//     top: 3vh;
+//     i{
+//         color: #ddd;
+//     }
+// }
+
 main{
     background-color: map-get($colores, color-fondo);
     .tabla-medidas {
