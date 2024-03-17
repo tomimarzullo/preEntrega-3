@@ -1,13 +1,6 @@
 /*----------------------------------MAIN NOSOTROS----------------------------------*/
 main{
     background-color: map-get($colores, color-fondo);
-    .equipo{
-        margin-bottom: 25px;
-        width: 100%;
-        height: 500px;
-        @include imagen (url(../../multimedia/equipo.jpg), cover, center);
-        background-color: map-get($colores, color-secundario);
-    }
     .nos{
         width: 300px;
         height: 300px;

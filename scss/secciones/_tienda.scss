@@ -41,11 +41,20 @@ main{
                 @include texto (#ddd, 16px, center, normal, none);
             }
             .tamaño{
-                margin: 12px;
+                margin: 12px auto;
                 display: flex;
                 justify-content: center;
+                ul{
+                    li{
+                        .talle{
+                            &:hover{
+                                background-color: rgb(71, 142, 235);
+                            }
+                        }
+                    }
+                }
             }
-            a {
+            .carrito {
                 padding: 8px;
                 display: flex;
                 justify-content: center;
