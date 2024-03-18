@@ -22,7 +22,7 @@ main {
             }
             i{
                 color: black;
-                font-size: 20px;
+                font-size: $tamaño-texto;
             }
         }
     }
@@ -30,7 +30,7 @@ main {
         width: 100%;
         height: auto;
         padding: 25px;
-        font-size: 18px;
+        font-size: $tamaño-texto;
         background-color: map-get($colores, color-secundario);
         border-radius: 10px;
         p{
@@ -127,6 +127,7 @@ main {
     bottom: 30px;
     @include flex (flex, none, center, center);
     transition-duration: 1.2s;
+    box-shadow: 0 0 10px black;
     &:hover{
         transform: scale(1.5);
     }

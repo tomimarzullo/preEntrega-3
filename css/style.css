@@ -116,7 +116,7 @@ main .lafeliz p span {
 }
 main .lafeliz p i {
   color: black;
-  font-size: 20px;
+  font-size: 18px;
 }
 main .call {
   width: 100%;
@@ -225,6 +225,7 @@ main .ofertas .mail .submit:hover {
   justify-content: center;
   align-items: center;
   transition-duration: 1.2s;
+  box-shadow: 0 0 10px black;
 }
 .wpp:hover {
   transform: scale(1.5);
