@@ -84,6 +84,23 @@
         }
     }
 
+
+    /*CONTACTO*/
+    
+    main{
+        .conteiner_contacto{
+            .formulario{
+                form{
+                    .form-contacto{
+                        width: 60%;
+                    }
+                }
+            }
+        }
+    }
+    
+    
+
     
     /* FOOTER */
     footer {
@@ -225,10 +242,13 @@
     main{
         .conteiner_contacto{
             display: flex;
-            @include flex (flex, none, space-evenly, none);
+            @include flex (flex, none, space-evenly, center);
             flex-wrap: nowrap;
             .formulario {
                 width: 50%;
+            }
+            .mapa{
+                width: 40%;
             }
         }
     }

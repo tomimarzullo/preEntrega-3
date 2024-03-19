@@ -27,13 +27,15 @@ main {
         }
     }
     .call {
-        width: 100%;
+        width: 70%;
         height: auto;
+        margin: 30px auto;
         padding: 25px;
         font-size: $tamaño-texto;
         background-color: map-get($colores, color-secundario);
         border-radius: 10px;
         p{
+            @include flex (flex, none, center, center);
             @include texto (#ddd, 18px, center, italic, none);
         }
     }
